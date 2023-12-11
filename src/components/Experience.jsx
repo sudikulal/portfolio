@@ -7,17 +7,27 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiences, education } from "../data/constants";
 import { MdWork } from "react-icons/md";
 import { IoIosSchool } from "react-icons/io";
+import banner from "../assets/bgside.png";
 
 function Experience() {
   return (
-    <div id="experience" className="text-bg-dark pt-5">
-      <h1 className="pt-4 text-center">Experience</h1>
-      <p className="mt-2 text-center">
+    <div
+      id="experience"
+      className="text-bg-dark pt-5"
+      style={{
+        backgroundImage: `url(${banner})`,
+        backgroundBlendMode: "soft-light",
+        backgroundSize: "cover",
+      }}
+    >
+      <h1 className="mt-4 text-center">
+        <strong>Experience</strong>
+      </h1>
+      <h5 className="pt-2 text-center">
         My Work Experience as a Software Engineer
-      </p>
+      </h5>
       <div
-        className="container p-4"
-        data-aos="fade-up"
+        className="container p-4 mt-4"
         style={{ overflowY: "auto", height: "500px" }}
       >
         <VerticalTimeline className="custom-line">

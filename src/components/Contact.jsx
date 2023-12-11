@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import banner from "../assets/bgside.png";
 
 function ContactMe() {
   const [formData, setFormData] = useState({
@@ -31,15 +32,31 @@ function ContactMe() {
   };
 
   return (
-    <div id="contact" className="text-bg-dark">
-      <div className="container">
-        <h2 className="text-center">Contact Me</h2>
-        <form onSubmit={handleSubmit} className="mx-auto" style={{ maxWidth: "400px" }}>
+    <div
+      id="contact"
+      className="text-bg-dark"
+      style={{
+        backgroundImage: `url(${banner})`,
+        backgroundBlendMode: "soft-light",
+        backgroundSize: "cover",
+      }}
+    >
+      <div className="container pt-5">
+        <h1 className="text-center mt-4">
+          <strong>Contact Me</strong>
+        </h1>
+        <form
+          onSubmit={handleSubmit}
+          className="mx-auto"
+          style={{ maxWidth: "400px" }}
+        >
           <div className="mb-3">
-            <label htmlFor="name" className="form-label">Name</label>
+            <label htmlFor="name" className="form-label">
+              Name
+            </label>
             <input
               type="text"
-              className="form-control"
+              className="form-control text-bg-dark"
               id="name"
               name="name"
               value={formData.name}
@@ -48,10 +65,12 @@ function ContactMe() {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="email" className="form-label">Email address</label>
+            <label htmlFor="email" className="form-label">
+              Email address
+            </label>
             <input
               type="email"
-              className="form-control"
+              className="form-control text-bg-dark"
               id="email"
               name="email"
               value={formData.email}
@@ -60,9 +79,11 @@ function ContactMe() {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="message" className="form-label">Message</label>
+            <label htmlFor="message" className="form-label">
+              Message
+            </label>
             <textarea
-              className="form-control"
+              className="form-control text-bg-dark"
               id="message"
               name="message"
               value={formData.message}
@@ -72,7 +93,9 @@ function ContactMe() {
             ></textarea>
           </div>
           <div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
           </div>
         </form>
       </div>

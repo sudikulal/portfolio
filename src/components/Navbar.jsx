@@ -3,11 +3,17 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top mb-4">
+      <nav
+        className="navbar navbar-expand-lg navbar-dark  fixed-top mb-4"
+        style={{
+          background:
+            "linear-gradient(112.1deg, rgb(63, 76, 119) 11.4%,rgb(32, 38, 57) 70.2%)",
+        }}
+      >
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="#about">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrFI9I7zgKh7GRWbPfNaT_yEnSIqhwth_K4Q&usqp=CAU"
+              src="https://img.icons8.com/?size=100&id=yy4kVfgjQwg2&format=png"
               alt="Logo"
               width={30}
               height={24}

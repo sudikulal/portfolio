@@ -3,15 +3,20 @@ import Lottie from "lottie-react";
 import animationData from "../assets/Animation.json";
 import { Bio } from "../data/constants";
 import Typewriter from "typewriter-effect";
+import banner from "../assets/bg.png";
 
 function About() {
   return (
-    <div id="about" className="bg-dark text-light d-flex justify-content-center align-items-center p-4 mt-4">
-      <div className="container">
-        <div className="row g-4 py-4">
+    <div
+      id="about"
+      className="bg-dark text-light p-5 mt-4"
+      style={{ backgroundImage: `url(${banner})`, backgroundSize: "cover", backgroundBlendMode:"soft-light"}}
+    >
+      <div className="container mt-4 p-4">
+        <div className="row  py-4">
           <div className="col-lg-6">
             <header>
-              <h1 className="display-4 mb-4">
+              <h1 className="mb-4">
                 Hi, I am <br /> <strong>{Bio.name}</strong>
               </h1>
             </header>
@@ -24,22 +29,17 @@ function About() {
                 }}
               />
             </h2>
-            <p className="lead font-italic mb-4">{Bio.description}</p>
-            <div className="d-md-flex gap-4">
+            <p className=" mb-4">{Bio.description}</p>
+            <div className="d-flex gap-4">
               <button
-                className="btn btn-outline-info flex-md-grow-1 mb-2"
-                onClick={() =>
-                  window.open(
-                    "https://drive.google.com/file/d/1nwgfr42Wgj5WM5kA1cKjgsQwn3XazP-Y/view?usp=drivesdk",
-                    "_blank"
-                  )
-                }
+                className="btn btn-outline-info mb-2"
+                onClick={() => window.open(Bio.resume, "_blank")}
               >
                 Resume
               </button>
               <button
-                className="btn btn-outline-info flex-md-grow-1 mb-2"
-                onClick={() => window.open("https://github.com/sudikulal", "_blank")}
+                className="btn btn-outline-info mb-2"
+                onClick={() => window.open(Bio.github, "_blank")}
               >
                 Github
               </button>
