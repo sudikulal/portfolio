@@ -20,7 +20,7 @@ function Project() {
           <div className="col-md-8 text-center">
             <h1 className="mt-4"><strong>Projects</strong></h1>
             <h5 className="font-size-18">
-              Here are some of my projects I worked on
+              Here are some of the personal projects I worked on.
             </h5>
           </div>
         </div>
@@ -41,7 +41,7 @@ function Project() {
                       <strong>{project.title}</strong>
                     </h5>
                     <p className="card-subtitle mb-2 text-center">
-                      <small>{project.date}</small>
+                      <small>{project.category}</small>
                     </p>
                   </div>
                   <div>
