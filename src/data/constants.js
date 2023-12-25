@@ -226,7 +226,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: "News$u",
+    title: "News4u",
     date: "March 2023 - Aug 2023",
     description:
       "A news app built with React and Node.js, leveraging a news API for real-time updates. This user-friendly application ensures access to the latest news, delivering timely and relevant information.",

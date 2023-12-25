@@ -16,18 +16,34 @@ function ContactMe() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    // Simulate sending email (this would typically be done on the server)
-    const success = true; // Set to false to simulate an error
-
-    if (success) {
-      // Reset form data
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
+    try {
+      const response = await fetch(process.env.REACT_APP_FORM_ID, {
+        method: "POST",
+        mode:"cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
+      console.log(response);
+
+      if (response.ok) {
+        // Reset form data on successful submission
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+
+        alert("Message sent successfully!");
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("An error occurred. Please try again later.");
     }
   };
 

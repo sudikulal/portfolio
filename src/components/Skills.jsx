@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { skills } from "../data/constants";
 import banner from "../assets/bgside.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
       id="skills"
@@ -26,15 +31,26 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="row justify-content-center mt-5">
+        <div className="skill row justify-content-center mt-5">
           {skills.map((skill, index) => (
-            <div key={index} className="col-md-6 col-lg-4 mb-4">
+            <div
+              key={index}
+              className="col-md-6 col-lg-4 mb-4"
+              data-aos="flip-left"
+            >
               <div className="border-0 shadow-lg flex-column h-100">
                 <div className="p-4">
-                  <h2 className="font-size-28 font-weight-bold mb-4 text-center">
+                  <h2
+                    className="font-size-28 font-weight-bold mb-4 text-center"
+                    data-aos="zoom-in"
+                  >
                     {skill.title}
                   </h2>
-                  <div className="d-flex justify-content-center flex-wrap gap-3 mt-4">
+                  <div
+                    className="d-flex justify-content-center flex-wrap gap-3 mt-4"
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                  >
                     {skill.skills.map((item, idx) => (
                       <div
                         key={idx}
@@ -48,7 +64,6 @@ const Skills = () => {
                             style={{ width: "24px", height: "24px" }}
                           />
                         </abbr>
-                        {/* {item.name} */}
                       </div>
                     ))}
                   </div>
