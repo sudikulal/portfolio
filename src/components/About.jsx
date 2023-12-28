@@ -25,7 +25,7 @@ function About() {
     scrollY: {
       translateX: [
         [0, "elOutX"],
-        [0, -3000],
+        [0, -2000],
         {
           inertia: 1,
         },
