@@ -37,8 +37,8 @@ function About() {
   lax.addElements(".lottie", {
     scrollY: {
       translateX: [
-        [0, "elOutX"],
-        [0, 3000],
+        [0, "elInX"],
+        [0, 1000],
         {
           inertia: 1,
         },
@@ -63,6 +63,7 @@ function About() {
         backgroundImage: `url(${banner})`,
         backgroundSize: "cover",
         backgroundBlendMode: "soft-light",
+        overflowX: "hidden", width:"100%"
       }}
     >
       <div className="container mt-4 p-4">
