@@ -149,7 +149,7 @@ export const experiences = [
     role: "Cloud Associate",
     company: "Niveus Solution",
     date: "Jan 2024 - present",
-    desc: "In my current role as a backend engineer, I am working in sale engament platform and is responsible for onboaring new clients and customizing the product as per the requirment.",
+    desc: "In my present employment as a backend engineer, I work in a sales engagement platform, where I am responsible for onboarding new clients and customizing the product to meet their needs.",
     skills: [
       "JavaScript",
       "NodeJs",
