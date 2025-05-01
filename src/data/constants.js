@@ -1,4 +1,4 @@
-import college from '../assets/college.png'
+import college from "../assets/college.png";
 
 export const Bio = {
   name: "Sudish K",
@@ -12,8 +12,7 @@ export const Bio = {
   I am a backend developer with a focus on Node.js, specializing in the creation of scalable server-side applications. My expertise lies in leveraging Node.js to design and optimize high-performance backend systems that cater to the demands of modern applications.
     `,
   github: "https://github.com/sudikulal",
-  resume:
-    "https://drive.google.com/file/d/1r5-IbdwN1zixcPdDXp600-xDOmfOSQUN/view?usp=drive_link",
+  resume: "https://flowcv.com/resume/v5iqs2kstu",
   linkedin: "https://in.linkedin.com/in/sudish-k-57785a190",
   twitter: "https://twitter.com/Sudikulal1",
   insta: "https://www.instagram.com/sudikulal325/",
@@ -87,8 +86,7 @@ export const skills = [
     skills: [
       {
         name: "Git",
-        image:
-          "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+        image: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
       },
       {
         name: "GitHub",
@@ -103,7 +101,7 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
+          "https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8",
       },
     ],
   },
@@ -132,8 +130,8 @@ export const experiences = [
     img: "https://www.juegostudio.com/wp-content/uploads/2021/05/logo.png",
     role: "Backend Developer",
     company: "Juego Studio",
-    date: "Apr 2022 - present",
-    desc: "In my current role as a backend engineer, I have developed and consistently managed game-related APIs, contributing to the seamless functionality of diverse gaming projects. My experience spans over five successful game endeavors, showcasing my proficiency in the dynamic realm of game development.",
+    date: "Apr 2022 - Jan 2024",
+    desc: "I have developed and consistently managed game-related APIs, contributing to the seamless functionality of diverse gaming projects. My experience spans over five successful game endeavors, showcasing my proficiency in the dynamic realm of game development.",
     skills: [
       "JavaScript",
       "NodeJs",
@@ -142,6 +140,23 @@ export const experiences = [
       "MySql",
       "Redis",
       "MongoDB",
+      "AWS",
+    ],
+  },
+  {
+    id: 2,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTzYm2mJnX1XUJC0iNV6OV7TUBZEMxfPSejw&s",
+    role: "Cloud Associate",
+    company: "Niveus Solution",
+    date: "Jan 2024 - present",
+    desc: "In my current role as a backend engineer, I am working in sale engament platform and is responsible for onboaring new clients and customizing the product as per the requirment.",
+    skills: [
+      "JavaScript",
+      "NodeJs",
+      "ExpressJs",
+      "MongoDB",
+      "Kafka",
+      "Elastic Search",
       "AWS",
     ],
   },
@@ -179,8 +194,8 @@ export const projects = [
     date: "Aug 2022 - Nov 2022",
     description:
       "A dynamic college website developed using React and Node.js and bootstrap library",
-    image:college,
-    tags: ["react Js","Bootstrap","Node Js"],
+    image: college,
+    tags: ["react Js", "Bootstrap", "Node Js"],
     category: "web app",
     github: "https://github.com/sudikulal/MIOT",
     link: "https://sudikulal.github.io/MIOT/",
@@ -193,7 +208,7 @@ export const projects = [
       "A media player project with  hand and face gesture recognition, developed using OpenCV and MediaPipe. This innovation enables users to control the player effortlessly through intuitive gestures, enhancing the interactive experience.",
     image:
       "https://i.pcmag.com/imagery/articles/02ToMmZcHS27pvLqB9Hr9q1-15..v1647551952.jpg",
-    tags: ["media pipe", "opencv", "tkinter","tenserflow","python"],
+    tags: ["media pipe", "opencv", "tkinter", "tenserflow", "python"],
     category: "desktop app",
     github: "",
     link: "",
@@ -206,7 +221,7 @@ export const projects = [
       "Built with Node.js, Express.js, and Socket.IO, this simple chat app offers seamless real-time communication",
     image:
       "https://img.freepik.com/premium-vector/chat-app-logo-design-template-can-be-used-icon-chat-application-logo_605910-1724.jpg",
-    tags: ["node Js", "express js", "socket.io","html","css"],
+    tags: ["node Js", "express js", "socket.io", "html", "css"],
     category: "web app",
     github: "https://github.com/sudikulal/chat-app",
     link: "",
@@ -219,7 +234,7 @@ export const projects = [
       "A dynamic Rock, Paper, Scissors game crafted with React.js and Node.js, featuring real-time play with friends through Socket.IO. This engaging application offers both multiplayer and computer mode for an interactive and versatile gaming experience.",
     image:
       "https://media.geeksforgeeks.org/wp-content/uploads/20230802174130/Rock-Paper-Scissor.webp",
-    tags: ["node Js", "express js", "socket.io","html","css"],
+    tags: ["node Js", "express js", "socket.io", "html", "css"],
     category: "web app",
     github: "https://github.com/sudikulal/rps-game",
     link: "https://rps-online.vercel.app/",
@@ -232,7 +247,7 @@ export const projects = [
       "A news app built with React and Node.js, leveraging a news API for real-time updates. This user-friendly application ensures access to the latest news, delivering timely and relevant information.",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYN09MsHDipPCV4-D-ECTD1y-HLUOA9eSy_g&usqp=CAU",
-    tags: ["node Js", "react Js", "new Api","bootstrap",],
+    tags: ["node Js", "react Js", "new Api", "bootstrap"],
     category: "web app",
     github: "https://github.com/sudikulal/News4u",
     link: "",
